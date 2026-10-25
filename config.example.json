@@ -1,0 +1,28 @@
+{
+  "_comment": "复制为 config.json 后填写。所有路径均可用环境变量覆盖：FFMPEG / WORKSPACE_ROOT",
+  "ffmpegPath": "C:/tools/ffmpeg.exe",
+  "workspaceRoot": "C:/ai-crew-work",
+  "account": {
+    "mid": 0,
+    "uname": ""
+  },
+  "tts": {
+    "engine": "edge",
+    "voice": "zh-CN-YunxiNeural",
+    "localBundle": "",
+    "referenceWav": ""
+  },
+  "publish": {
+    "tid": 231,
+    "tags": [
+      "AI"
+    ],
+    "copyright": 1
+  },
+  "render": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "crf": 20
+  }
+}

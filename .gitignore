@@ -1,0 +1,12 @@
+node_modules/
+config.json
+cookie.json
+secrets/
+*.log
+out/
+*.mp4
+*.mp3
+*.wav
+*.png
+_scratch/
+.DS_Store

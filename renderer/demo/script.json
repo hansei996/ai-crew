@@ -1,0 +1,91 @@
+{
+  "slug": "demo",
+  "title": "DSH 视频渲染引擎",
+  "subtitle": "一条命令，把 JSON 剧本变成成片",
+  "episode": "EP.07",
+  "channel": "@DSH 实验室",
+  "desc": "用一份 JSON 剧本，自动产出 1080p 成片、封面和投稿元数据。字幕、转场、贴纸、BGM 全部由渲染引擎生成。",
+  "tags": [
+    "自动化",
+    "视频渲染",
+    "ffmpeg",
+    "编程",
+    "效率工具"
+  ],
+  "transitionSec": 0.4,
+  "theme": {
+    "accent": "#4ea1ff",
+    "accent2": "#ff5f9e"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "DSH 视频渲染引擎",
+      "subtitle": "一条命令，把 JSON 剧本变成成片",
+      "kicker": "零依赖 · 纯 Node + ffmpeg",
+      "durationSec": 4.4
+    },
+    {
+      "type": "quote",
+      "text": "字幕、转场、贴纸、背景音乐，全部自动完成。",
+      "subtitle": false,
+      "durationSec": 7.4
+    },
+    {
+      "type": "screen",
+      "imagePath": "img/screen_1.png",
+      "label": "screen 卡 · 缓慢 zoompan",
+      "text": "渲染器为每条 scene 单独出一段视频。屏幕卡会自动裁切，并缓慢推近。",
+      "durationSec": 12.4
+    },
+    {
+      "type": "sticker",
+      "imagePath": "img/sticker_star.png",
+      "text": "然后拼接",
+      "caption": "sticker 卡 · 弹跳动画",
+      "subtitle": false,
+      "durationSec": 6.4
+    },
+    {
+      "type": "screen",
+      "imagePath": "img/screen_2.png",
+      "label": "xfade 转场链",
+      "text": "片段之间用 xfade 转场连接。整条时间轴按帧对齐。",
+      "durationSec": 12.5
+    },
+    {
+      "type": "quote",
+      "text": "中文字幕走 libass，底部留安全区，字号描边都适配 1080p。",
+      "subtitle": false,
+      "durationSec": 8.4
+    },
+    {
+      "type": "sticker",
+      "imagePath": "img/sticker_star.png",
+      "text": "BGM 全程合成",
+      "caption": "无人声时 BGM -13dB，有人声压到 -22dB",
+      "subtitle": false,
+      "durationSec": 7.4
+    },
+    {
+      "type": "screen",
+      "imagePath": "img/screen_3.png",
+      "label": "成片 + 封面 + 元数据",
+      "text": "封面和投稿元数据一起产出。生成完就能直接投稿。",
+      "durationSec": 13.5
+    },
+    {
+      "type": "quote",
+      "text": "全程零依赖，只用 node 内置模块和一份 ffmpeg 二进制。",
+      "subtitle": false,
+      "durationSec": 9.6
+    },
+    {
+      "type": "hook",
+      "text": "下一期：真人配音接入",
+      "subtitle": "已支持逐句人声轨，混音自动把 BGM 压到 -22dB",
+      "kicker": "renderer 已就绪",
+      "durationSec": 11.6
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "smoke",
+  "title": "冒烟测试标题",
+  "subtitle": "四类卡片各 2 秒",
+  "episode": "EP.00",
+  "tags": [
+    "test"
+  ],
+  "transitionSec": 0.4,
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "冒烟测试标题",
+      "subtitle": "四类卡片各 2 秒",
+      "kicker": "smoke test",
+      "durationSec": 2
+    },
+    {
+      "type": "quote",
+      "text": "引用卡片的这一句话。",
+      "subtitle": false,
+      "durationSec": 2
+    },
+    {
+      "type": "screen",
+      "imagePath": "img/screen_1.png",
+      "label": "screen 卡",
+      "text": "屏幕卡片带截图。",
+      "durationSec": 2
+    },
+    {
+      "type": "sticker",
+      "imagePath": "img/sticker_star.png",
+      "text": "贴纸",
+      "caption": "sticker 卡",
+      "subtitle": false,
+      "durationSec": 2
+    }
+  ]
+}

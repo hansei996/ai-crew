@@ -1,0 +1,58 @@
+{
+  "slug": "demo15",
+  "title": "渲染器特效样片",
+  "subtitle": "15 秒：卡内变化 + 证据卡 + 日志行 + 进度条",
+  "episode": "DEMO",
+  "channel": "@大肥鱼实验室",
+  "desc": "renderer 动效能力样片（真跑，非 PPT）",
+  "tags": [
+    "ffmpeg",
+    "渲染器"
+  ],
+  "transitionSec": 0.4,
+  "transitions": [
+    "circleopen",
+    "zoomin",
+    "slideleft"
+  ],
+  "bgm": true,
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "一条命令出片",
+      "subtitle": "卡内每 3 秒一次有效变化",
+      "durationSec": 3.6
+    },
+    {
+      "type": "term",
+      "label": "RUN LOG · C01",
+      "lines": [
+        "$ node bin/install.js --dir ..\\_c01_install",
+        "installed custom: lab\\_c01_install\\ffmpeg-skill",
+        "$ node bin/install.js doctor   (ffmpeg 8.1.2 + ffprobe)",
+        "ok: 73 capabilities available, 0 required missing"
+      ],
+      "caption": "42 / 42 tools usable",
+      "durationSec": 4.5,
+      "anim": "typewriter"
+    },
+    {
+      "type": "fx",
+      "fx": [
+        "particles",
+        "scanline"
+      ],
+      "text": "扫描线加粒子，全部 ffmpeg 现场生成。",
+      "durationSec": 3.6,
+      "anim": "rise"
+    },
+    {
+      "type": "screen",
+      "imagePath": "img/c01_terminal.png",
+      "label": "证据截图卡 · C01",
+      "text": "真跑出来的终端证据，截图直接进画面。",
+      "durationSec": 4.5,
+      "subtitle": false
+    }
+  ]
+}
